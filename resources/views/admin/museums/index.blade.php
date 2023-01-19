@@ -36,16 +36,17 @@
                 <tr>
                     <td>{{$museum->id}}</td>
                     <td>{{$museum->name}}</td>
-                    <td>$ {{number_format($museum->price,2,',','.')}}</td>
+                    <td>{{$museum->nation}}</td>
                     <td class="d-flex">
-                        <a class="btn btn-primary" href="{{route('museums.show', $beer->slug)}}">SHOW</a>
-                        <a class="btn btn-info" href="{{route('museums.edit', $beer)}}">EDIT</a>
-                        @include('partials.form-delete')
+                        <a class="btn btn-primary" href="{{route('museums.show', $museum->slug)}}">SHOW</a>
+                        <a class="btn btn-info" href="{{route('museums.edit', $museum)}}">EDIT</a>
+                        <a class="btn btn-danger" href="">EDIT</a>
                     </td>
                 </tr>
             @endforeach
 
-
+            {{-- {{route('museums.edit', $museum)}} --}}
+            {{-- @include('partials.form-delete') --}}
 
         </tbody>
       </table>
