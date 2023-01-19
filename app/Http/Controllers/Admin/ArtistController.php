@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers\Admin;
 
-use app\http\Controllers\Controller;
+use App\Http\Controllers\Controller;
 use App\Models\Artist;
 use App\Http\Requests\StoreArtistRequest;
 use App\Http\Requests\UpdateArtistRequest;
