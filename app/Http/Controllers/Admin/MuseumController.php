@@ -16,7 +16,8 @@ class MuseumController extends Controller
      */
     public function index()
     {
-        //
+        $museums = Museum::orderby('id', 'desc')->paginate(10);
+        return view('admin.museums.index',compact('museums'));
     }
 
     /**
