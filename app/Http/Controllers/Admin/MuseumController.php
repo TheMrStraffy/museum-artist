@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers\Admin;
 
-use app\http\Controllers\Controller;
+use App\Http\Controllers\Controller;
 use App\Models\Museum;
 use App\Http\Requests\StoreMuseumRequest;
 use App\Http\Requests\UpdateMuseumRequest;

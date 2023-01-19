@@ -6,7 +6,7 @@
         <div class="card mx-auto text-center" style="width: 18rem;">
             {{-- <img src="..." class="card-img-top" alt="..."> --}}
             <div class="card-body">
-              <h5 class="card-title">AAAAAAAA</h5>
+              <h5 class="card-title"></h5>
 
               <div class="action-btns d-flex ">
 

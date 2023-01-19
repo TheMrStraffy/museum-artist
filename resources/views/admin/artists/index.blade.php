@@ -15,11 +15,11 @@
         <tbody>
             @foreach ($artists as $artist)
 
+            <tr>
+              <th scope="row">{{$artist->id}}</th>
+              <td>{{$artist->name}}</td>
+            </tr>
             @endforeach
-          <tr>
-            <th scope="row">{{$artist->id}}</th>
-            <td>{{$artist->name}}</td>
-          </tr>
 
         </tbody>
       </table>
