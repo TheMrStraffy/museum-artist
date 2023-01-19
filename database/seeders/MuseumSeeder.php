@@ -19,7 +19,7 @@ class MuseumSeeder extends Seeder
         foreach($array_museum['museums'] as $museum_item){
             $new_museum = new Museum();
             $new_museum->name = $museum_item['name'];
-            $new_museum->slug = Museum::generator_slug($new_museum->name);
+            $new_museum->slug = Museum::generateSlug($new_museum->name);
             $new_museum->nation = $museum_item['nation'];
             $new_museum->save();
         }
